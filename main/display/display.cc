@@ -12,7 +12,7 @@
 #define TAG "Display"
 
 Display::Display() {
-    // Notification timer
+    // Notification timer 
     esp_timer_create_args_t notification_timer_args = {
         .callback = [](void *arg) {
             Display *display = static_cast<Display*>(arg);
