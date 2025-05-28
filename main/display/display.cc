@@ -2,7 +2,6 @@
 #include <esp_err.h>
 #include <string>
 #include <cstdlib>
-
 #include "display.h"
 #include "board.h"
 #include "application.h"
@@ -205,7 +204,7 @@ void Display::SetIcon(const char* icon) {
     }
     DisplayLockGuard lock(this);
     lv_label_set_text(emotion_label_, icon);
-}
+} 
 
 void Display::SetChatMessage(const std::string &role, const std::string &content) {
 }
